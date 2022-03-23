@@ -11,6 +11,12 @@
 		E620F65827EB093B001233C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F65727EB093B001233C7 /* ContentView.swift */; };
 		E620F65A27EB0941001233C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E620F65927EB0941001233C7 /* Assets.xcassets */; };
 		E620F65D27EB0941001233C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E620F65C27EB0941001233C7 /* Preview Assets.xcassets */; };
+		E620F66727EB0BF0001233C7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F66627EB0BF0001233C7 /* SplashView.swift */; };
+		E620F66A27EB1417001233C7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F66927EB1417001233C7 /* Constants.swift */; };
+		E620F67127EB1695001233C7 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F67027EB1695001233C7 /* Color+Extension.swift */; };
+		E620F67527EB2434001233C7 /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = E620F67327EB2434001233C7 /* CircularStd-Book.otf */; };
+		E620F67627EB2434001233C7 /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E620F67427EB2434001233C7 /* CircularStd-Bold.otf */; };
+		E620F67927EB24FF001233C7 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F67827EB24FF001233C7 /* Font+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,13 @@
 		E620F65727EB093B001233C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E620F65927EB0941001233C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E620F65C27EB0941001233C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E620F66627EB0BF0001233C7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		E620F66927EB1417001233C7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E620F67027EB1695001233C7 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		E620F67327EB2434001233C7 /* CircularStd-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Book.otf"; sourceTree = "<group>"; };
+		E620F67427EB2434001233C7 /* CircularStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.otf"; sourceTree = "<group>"; };
+		E620F67727EB2456001233C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E620F67827EB24FF001233C7 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +64,12 @@
 		E620F65427EB093B001233C7 /* SwiftUI-Social-App */ = {
 			isa = PBXGroup;
 			children = (
-				E620F65527EB093B001233C7 /* SwiftUI_Social_AppApp.swift */,
-				E620F65727EB093B001233C7 /* ContentView.swift */,
-				E620F65927EB0941001233C7 /* Assets.xcassets */,
+				E620F67727EB2456001233C7 /* Info.plist */,
+				E620F66D27EB147C001233C7 /* Extensions */,
+				E620F66827EB0F4D001233C7 /* Utils */,
+				E620F66427EB0B6A001233C7 /* App */,
+				E620F66527EB0B6E001233C7 /* Views */,
+				E620F66327EB0B64001233C7 /* Resources */,
 				E620F65B27EB0941001233C7 /* Preview Content */,
 			);
 			path = "SwiftUI-Social-App";
@@ -65,6 +81,58 @@
 				E620F65C27EB0941001233C7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E620F66327EB0B64001233C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E620F67227EB23FF001233C7 /* Fonts */,
+				E620F65927EB0941001233C7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E620F66427EB0B6A001233C7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E620F65527EB093B001233C7 /* SwiftUI_Social_AppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E620F66527EB0B6E001233C7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E620F65727EB093B001233C7 /* ContentView.swift */,
+				E620F66627EB0BF0001233C7 /* SplashView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E620F66827EB0F4D001233C7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E620F66927EB1417001233C7 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E620F66D27EB147C001233C7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E620F67027EB1695001233C7 /* Color+Extension.swift */,
+				E620F67827EB24FF001233C7 /* Font+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E620F67227EB23FF001233C7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E620F67427EB2434001233C7 /* CircularStd-Bold.otf */,
+				E620F67327EB2434001233C7 /* CircularStd-Book.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +194,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E620F65D27EB0941001233C7 /* Preview Assets.xcassets in Resources */,
+				E620F67627EB2434001233C7 /* CircularStd-Bold.otf in Resources */,
+				E620F67527EB2434001233C7 /* CircularStd-Book.otf in Resources */,
 				E620F65A27EB0941001233C7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +208,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E620F65827EB093B001233C7 /* ContentView.swift in Sources */,
+				E620F67127EB1695001233C7 /* Color+Extension.swift in Sources */,
+				E620F67927EB24FF001233C7 /* Font+Extension.swift in Sources */,
 				E620F65627EB093B001233C7 /* SwiftUI_Social_AppApp.swift in Sources */,
+				E620F66727EB0BF0001233C7 /* SplashView.swift in Sources */,
+				E620F66A27EB1417001233C7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +344,7 @@
 				DEVELOPMENT_TEAM = SHX88X5G84;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Social-App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +374,7 @@
 				DEVELOPMENT_TEAM = SHX88X5G84;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Social-App/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
