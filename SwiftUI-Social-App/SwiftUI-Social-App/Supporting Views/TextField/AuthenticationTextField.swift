@@ -57,11 +57,14 @@ struct AuthenticationTextField: View {
                 .onChange(of: text, perform: onTextChanged)
             
             
-            if field == .password {
+            switch field {
+            case .password:
                 Button(action: { showPassword.toggle() }) {
                     Image(showPassword ? Constants.Icon.show : Constants.Icon.hide)
                         .padding(.trailing, 16)
                 }
+            default:
+                EmptyView()
             }
         }
     }
@@ -89,10 +92,14 @@ struct AuthenticationTextField: View {
     
     // MARK: - Enumerations
     enum FocusableField: Hashable {
-        case emailAddress, password
-
+        case nickname(id: Int = 0)
+        case emailAddress(id: Int = 0)
+        case password(id: Int = 0)
+        
         fileprivate var textContentType: UITextContentType {
             switch self {
+            case .nickname:
+                return .nickname
             case .emailAddress:
                 return .emailAddress
             case .password:
@@ -104,7 +111,7 @@ struct AuthenticationTextField: View {
             switch self {
             case .emailAddress:
                 return .emailAddress
-            case .password:
+            case .nickname, .password:
                 return .default
             }
         }
@@ -121,9 +128,9 @@ struct AuthenticationTextField_Previews: PreviewProvider {
         AuthenticationTextField(
             placeholder: "Email",
             text: .constant(""),
-            field: .emailAddress,
+            field: .emailAddress(),
             nextField: nil,
-            currentFocusedField: .constant(.emailAddress)
+            currentFocusedField: .constant(.emailAddress())
         )
     }
 }

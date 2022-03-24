@@ -9,13 +9,21 @@ import SwiftUI
 
 struct LoginView: View {
     
+    // Variables indicate user's registration info
     @State private var email = ""
     @State private var password = ""
-    @State private var showPassword = false
+    
+    // Variables indicate whether show involved views or not
     @State private var showForgotPasswordView = false
     @State private var showSignUpView = false
+    
+    // Variables indicate a specific field's focus state
     @State private var currentFocusedField: AuthenticationTextField.FocusableField? = nil
     @FocusState private var focusedField: AuthenticationTextField.FocusableField?
+    private let fields: [AuthenticationTextField.FocusableField] = [
+        .emailAddress(),
+        .password(),
+    ]
     
     var body: some View {
         GeometryReader { geometry in
@@ -32,19 +40,19 @@ struct LoginView: View {
                         AuthenticationTextField(
                             placeholder: "Email",
                             text: $email,
-                            field: .emailAddress,
-                            nextField: .password,
+                            field: fields[0],
+                            nextField: fields[1],
                             currentFocusedField: $currentFocusedField
                         )
-                        .focused($focusedField, equals: .emailAddress)
+                        .focused($focusedField, equals: fields[0])
                         
                         AuthenticationTextField(
                             placeholder: "Password",
                             text: $password,
-                            field: .password,
+                            field: fields[1],
                             currentFocusedField: $currentFocusedField
                         )
-                        .focused($focusedField, equals: .password)
+                        .focused($focusedField, equals: fields[1])
                     }
                     .onChange(
                         of: focusedField,
@@ -108,6 +116,13 @@ struct LoginView: View {
                                 .foregroundColor(.purpleText)
                         }
                     }
+                    .fullScreenCover(isPresented: $showSignUpView) {
+                        // onDismiss
+                        // Can fills registration info into login info
+                    } content: {
+                        SignUpView()
+                    }
+
                     
                     Spacer()
                 }
@@ -135,11 +150,6 @@ struct LoginView: View {
         }
     }
     
-}
-
-extension Color {
-    fileprivate static let purpleText = Color(red: 82 / 255.0, green: 82 / 255.0, blue: 189 / 255.0)
-    fileprivate static let darkText = Color(red: 96 / 255.0, green: 96 / 255.0, blue: 96 / 255.0)
 }
 
 struct SignInView_Previews: PreviewProvider {

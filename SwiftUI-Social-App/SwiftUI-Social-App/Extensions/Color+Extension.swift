@@ -38,6 +38,8 @@ extension Color {
     static let secondaryText = Color(red: 130 / 255.0, green: 130 / 255.0, blue: 130 / 255.0)
     static let placeholderText = Color(red: 189 / 255.0, green: 189 / 255.0, blue: 189 / 255.0)
     static let tertiaryText = Color(red: 189 / 255.0, green: 189 / 255.0, blue: 189 / 255.0)
+    static let purpleText = Color(red: 82 / 255.0, green: 82 / 255.0, blue: 189 / 255.0)
+    static let darkText = Color(red: 96 / 255.0, green: 96 / 255.0, blue: 96 / 255.0)
     
     static let regularShadowColor = Color(uiColor: .init(red: 38 / 255.0, green: 41 / 255.0, blue: 43 / 255.0, alpha: 0.07))
     
