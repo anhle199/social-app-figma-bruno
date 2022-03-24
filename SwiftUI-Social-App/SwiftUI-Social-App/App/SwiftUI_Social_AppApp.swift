@@ -11,7 +11,9 @@ import SwiftUI
 struct SwiftUI_Social_AppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            // if you have logged in then show HomeView;
+            // otherwise show SplashVew
+            SplashView()
         }
     }
 }

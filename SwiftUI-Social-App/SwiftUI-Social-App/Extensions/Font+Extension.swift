@@ -7,11 +7,55 @@
 
 import SwiftUI
 
+// MARK: - Custom Font Family
 extension Font {
-
-    fileprivate static let _fontName = "CircularStd"
     
-    enum CustomFontType {
+    enum CircularStdStyle: String {
+        case bold, black, book
+        
+        fileprivate static let fontFamilyName = "CircularStd"
+        fileprivate var fontName: String {
+            return "\(CircularStdStyle.fontFamilyName)-\(rawValue.capitalized)"
+        }
+    }
+    
+    enum ProximaNoveStyle: String {
+        case bold
+        
+        fileprivate static let fontFamilyName = "ProximaNova"
+        fileprivate var fontName: String {
+            return "\(CircularStdStyle.fontFamilyName)-\(rawValue.capitalized)"
+        }
+    }
+    
+    enum CustomFontFamily {
+        case circularStd(style: CircularStdStyle)
+        case proximaNova(style: ProximaNoveStyle)
+        
+        fileprivate var fontName: String {
+            switch self {
+            case .circularStd(let style):
+                return style.fontName
+            case .proximaNova(let style):
+                return style.fontName
+            }
+        }
+    }
+    
+    static func primaryFontFamily(
+        _ fontFamily: CustomFontFamily,
+        withSize size: CGFloat = 14
+    ) -> Font {
+        return .custom(fontFamily.fontName, size: size)
+    }
+    
+}
+
+
+// MARK: - Custom Font Style
+extension Font {
+    
+    enum CustomFontStyle {
         case heading
         case title1, title2, title3, title4
         case bodySemibold, body1, body2, body3, body4
@@ -20,9 +64,9 @@ extension Font {
         fileprivate var fontName: String {
             switch self {
             case .heading, .title1, .title2, .title4, .bodySemibold:
-               return "\(_fontName)-Bold"
+                return "CircularStd-Bold"
             case .title3, .body1, .body2, .body3, .body4, .caption:
-                return "\(_fontName)-Book"
+                return "CircularStd-Book"
             }
         }
         
@@ -44,8 +88,8 @@ extension Font {
         }
     }
     
-    static func primary(_ fontType: CustomFontType) -> Font {
-        .custom(fontType.fontName, size: fontType.fontSize)
+    static func primaryStyle(_ style: CustomFontStyle) -> Font {
+        .custom(style.fontName, size: style.fontSize)
     }
     
 }

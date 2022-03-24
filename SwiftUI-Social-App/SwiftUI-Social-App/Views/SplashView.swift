@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SplashView: View {
+    
+    @State private var showLoginView = false
+    
     var body: some View {
         ZStack {
             Image(Constants.Image.darkBackground)
@@ -24,12 +27,14 @@ struct SplashView: View {
                     .padding(.horizontal)
                 
                 Text("SHARE - INSPIRE - CONNECT")
-                    .font(.primary(.caption))
+                    .font(.primaryStyle(.caption))
                     .foregroundColor(.white)
                 
-                Button(action: {}) {
+                Button {
+                    showLoginView.toggle()
+                } label: {
                     Text("GET STARTED")
-                        .font(.primary(.bodySemibold))
+                        .font(.primaryStyle(.bodySemibold))
                         .foregroundColor(.white)
                         .padding(.vertical, 16)
                         .padding(.horizontal, 24)
@@ -45,6 +50,9 @@ struct SplashView: View {
                         )
                         .cornerRadius(30)
                 }
+            }
+            .fullScreenCover(isPresented: $showLoginView) {
+                LoginView()
             }
         }
     }

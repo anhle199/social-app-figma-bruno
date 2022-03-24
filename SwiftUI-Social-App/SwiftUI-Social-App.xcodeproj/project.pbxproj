@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E620F65627EB093B001233C7 /* SwiftUI_Social_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F65527EB093B001233C7 /* SwiftUI_Social_AppApp.swift */; };
-		E620F65827EB093B001233C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F65727EB093B001233C7 /* ContentView.swift */; };
 		E620F65A27EB0941001233C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E620F65927EB0941001233C7 /* Assets.xcassets */; };
 		E620F65D27EB0941001233C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E620F65C27EB0941001233C7 /* Preview Assets.xcassets */; };
 		E620F66727EB0BF0001233C7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F66627EB0BF0001233C7 /* SplashView.swift */; };
@@ -17,12 +16,18 @@
 		E620F67527EB2434001233C7 /* CircularStd-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = E620F67327EB2434001233C7 /* CircularStd-Book.otf */; };
 		E620F67627EB2434001233C7 /* CircularStd-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E620F67427EB2434001233C7 /* CircularStd-Bold.otf */; };
 		E620F67927EB24FF001233C7 /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F67827EB24FF001233C7 /* Font+Extension.swift */; };
+		E620F67B27EB8204001233C7 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F67A27EB8204001233C7 /* LoginView.swift */; };
+		E620F67E27EB8287001233C7 /* ProximaNova-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E620F67C27EB8287001233C7 /* ProximaNova-Bold.otf */; };
+		E620F67F27EB8287001233C7 /* CircularStd-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = E620F67D27EB8287001233C7 /* CircularStd-Black.otf */; };
+		E620F68127EB875E001233C7 /* View+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F68027EB875E001233C7 /* View+RoundedCorner.swift */; };
+		E620F68427EB8EFB001233C7 /* AuthenticationTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F68327EB8EFB001233C7 /* AuthenticationTextFieldStyle.swift */; };
+		E620F68627EB909C001233C7 /* AuthenticationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F68527EB909C001233C7 /* AuthenticationButton.swift */; };
+		E6EF7BF727EC5015006ADB28 /* AuthenticationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF7BF627EC5015006ADB28 /* AuthenticationTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E620F65227EB093B001233C7 /* SwiftUI-Social-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Social-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E620F65527EB093B001233C7 /* SwiftUI_Social_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Social_AppApp.swift; sourceTree = "<group>"; };
-		E620F65727EB093B001233C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E620F65927EB0941001233C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E620F65C27EB0941001233C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E620F66627EB0BF0001233C7 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -32,6 +37,13 @@
 		E620F67427EB2434001233C7 /* CircularStd-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Bold.otf"; sourceTree = "<group>"; };
 		E620F67727EB2456001233C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E620F67827EB24FF001233C7 /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		E620F67A27EB8204001233C7 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E620F67C27EB8287001233C7 /* ProximaNova-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.otf"; sourceTree = "<group>"; };
+		E620F67D27EB8287001233C7 /* CircularStd-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "CircularStd-Black.otf"; sourceTree = "<group>"; };
+		E620F68027EB875E001233C7 /* View+RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RoundedCorner.swift"; sourceTree = "<group>"; };
+		E620F68327EB8EFB001233C7 /* AuthenticationTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextFieldStyle.swift; sourceTree = "<group>"; };
+		E620F68527EB909C001233C7 /* AuthenticationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationButton.swift; sourceTree = "<group>"; };
+		E6EF7BF627EC5015006ADB28 /* AuthenticationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +77,11 @@
 			isa = PBXGroup;
 			children = (
 				E620F67727EB2456001233C7 /* Info.plist */,
+				E620F66427EB0B6A001233C7 /* App */,
 				E620F66D27EB147C001233C7 /* Extensions */,
 				E620F66827EB0F4D001233C7 /* Utils */,
-				E620F66427EB0B6A001233C7 /* App */,
+				E620F68727EB9158001233C7 /* Styles */,
+				E620F68A27EB9383001233C7 /* Supporting Views */,
 				E620F66527EB0B6E001233C7 /* Views */,
 				E620F66327EB0B64001233C7 /* Resources */,
 				E620F65B27EB0941001233C7 /* Preview Content */,
@@ -103,8 +117,8 @@
 		E620F66527EB0B6E001233C7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E620F65727EB093B001233C7 /* ContentView.swift */,
 				E620F66627EB0BF0001233C7 /* SplashView.swift */,
+				E620F67A27EB8204001233C7 /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -122,6 +136,7 @@
 			children = (
 				E620F67027EB1695001233C7 /* Color+Extension.swift */,
 				E620F67827EB24FF001233C7 /* Font+Extension.swift */,
+				E620F68027EB875E001233C7 /* View+RoundedCorner.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -129,10 +144,53 @@
 		E620F67227EB23FF001233C7 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				E620F67D27EB8287001233C7 /* CircularStd-Black.otf */,
+				E620F67C27EB8287001233C7 /* ProximaNova-Bold.otf */,
 				E620F67427EB2434001233C7 /* CircularStd-Bold.otf */,
 				E620F67327EB2434001233C7 /* CircularStd-Book.otf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E620F68727EB9158001233C7 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				E620F68827EB915D001233C7 /* TextField */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		E620F68827EB915D001233C7 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				E620F68327EB8EFB001233C7 /* AuthenticationTextFieldStyle.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		E620F68927EB9163001233C7 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				E620F68527EB909C001233C7 /* AuthenticationButton.swift */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		E620F68A27EB9383001233C7 /* Supporting Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6EF7BF827EC7337006ADB28 /* TextField */,
+				E620F68927EB9163001233C7 /* Button */,
+			);
+			path = "Supporting Views";
+			sourceTree = "<group>";
+		};
+		E6EF7BF827EC7337006ADB28 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				E6EF7BF627EC5015006ADB28 /* AuthenticationTextField.swift */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,10 +251,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E620F67F27EB8287001233C7 /* CircularStd-Black.otf in Resources */,
 				E620F65D27EB0941001233C7 /* Preview Assets.xcassets in Resources */,
 				E620F67627EB2434001233C7 /* CircularStd-Bold.otf in Resources */,
 				E620F67527EB2434001233C7 /* CircularStd-Book.otf in Resources */,
 				E620F65A27EB0941001233C7 /* Assets.xcassets in Resources */,
+				E620F67E27EB8287001233C7 /* ProximaNova-Bold.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,8 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E620F65827EB093B001233C7 /* ContentView.swift in Sources */,
+				E6EF7BF727EC5015006ADB28 /* AuthenticationTextField.swift in Sources */,
+				E620F67B27EB8204001233C7 /* LoginView.swift in Sources */,
 				E620F67127EB1695001233C7 /* Color+Extension.swift in Sources */,
+				E620F68627EB909C001233C7 /* AuthenticationButton.swift in Sources */,
+				E620F68127EB875E001233C7 /* View+RoundedCorner.swift in Sources */,
+				E620F68427EB8EFB001233C7 /* AuthenticationTextFieldStyle.swift in Sources */,
 				E620F67927EB24FF001233C7 /* Font+Extension.swift in Sources */,
 				E620F65627EB093B001233C7 /* SwiftUI_Social_AppApp.swift in Sources */,
 				E620F66727EB0BF0001233C7 /* SplashView.swift in Sources */,

@@ -9,6 +9,14 @@ import SwiftUI
 
 extension Color {
     
+    static let primaryLinearGradientColor = LinearGradient(
+        colors: [
+            Color(red: 136 / 255.0, green: 139 / 255.0, blue: 244 / 255.0),
+            Color(red: 81 / 255.0, green: 81 / 255.0, blue: 198 / 255.0)
+        ],
+        startPoint: .trailing,
+        endPoint: .leading
+    )
     static let primaryColor = Color(red: 136 / 255.0, green: 139 / 255.0, blue: 244 / 255.0)
     static let errorColor = Color(red: 233 / 255.0, green: 80 / 255.0, blue: 80 / 255.0)
     
@@ -16,6 +24,7 @@ extension Color {
     static let greyBackground = Color(red: 243 / 255.0, green: 245 / 255.0, blue: 247 / 255.0)
     static let primaryBackground = Color(red: 241 / 255.0, green: 241 / 255.0, blue: 254 / 255.0)
     static let overlayBackground = Color(uiColor: .init(red: 51 / 255.0, green: 51 / 255.0, blue: 51 / 255.0, alpha: 0.8))
+    static let thirdPartyAuthenticationBackground = Color(red: 227 / 255.0, green: 228 / 255.0, blue: 252 / 255.0)
     
     static let greyScale1 = Color(red: 51 / 255.0, green: 51 / 255.0, blue: 51 / 255.0)
     static let greyScale2 = Color(red: 79 / 255.0, green: 79 / 255.0, blue: 79 / 255.0)
