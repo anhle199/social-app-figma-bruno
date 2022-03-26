@@ -13,7 +13,8 @@ struct Constants {
         static let splash = "splash"
         static let darkBackground = "background.dark"
         
-        static let loginHeader = "login.welcome"
+        static let authHeaderDefault = "auth.header"
+        static let authHeaderWithWelcome = "auth.header.welcome"
     }
     
     struct Icon {

@@ -22,6 +22,9 @@
 		E620F68127EB875E001233C7 /* View+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F68027EB875E001233C7 /* View+RoundedCorner.swift */; };
 		E620F68427EB8EFB001233C7 /* AuthenticationTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F68327EB8EFB001233C7 /* AuthenticationTextFieldStyle.swift */; };
 		E620F68627EB909C001233C7 /* AuthenticationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F68527EB909C001233C7 /* AuthenticationButton.swift */; };
+		E6522AFC27EEC010008610F5 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6522AFB27EEC010008610F5 /* BackButton.swift */; };
+		E6522AFE27EED0FB008610F5 /* EmailVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6522AFD27EED0FB008610F5 /* EmailVerificationView.swift */; };
+		E6522B0027EEE2B9008610F5 /* SetNewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6522AFF27EEE2B9008610F5 /* SetNewPasswordView.swift */; };
 		E66C9DC427ECB9CA00A93177 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E66C9DC327ECB9CA00A93177 /* SignUpView.swift */; };
 		E6EF7BF727EC5015006ADB28 /* AuthenticationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6EF7BF627EC5015006ADB28 /* AuthenticationTextField.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +47,9 @@
 		E620F68027EB875E001233C7 /* View+RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RoundedCorner.swift"; sourceTree = "<group>"; };
 		E620F68327EB8EFB001233C7 /* AuthenticationTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextFieldStyle.swift; sourceTree = "<group>"; };
 		E620F68527EB909C001233C7 /* AuthenticationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationButton.swift; sourceTree = "<group>"; };
+		E6522AFB27EEC010008610F5 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		E6522AFD27EED0FB008610F5 /* EmailVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVerificationView.swift; sourceTree = "<group>"; };
+		E6522AFF27EEE2B9008610F5 /* SetNewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPasswordView.swift; sourceTree = "<group>"; };
 		E66C9DC327ECB9CA00A93177 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		E6EF7BF627EC5015006ADB28 /* AuthenticationTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				E620F68527EB909C001233C7 /* AuthenticationButton.swift */,
+				E6522AFB27EEC010008610F5 /* BackButton.swift */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -192,6 +199,8 @@
 			children = (
 				E620F67A27EB8204001233C7 /* LoginView.swift */,
 				E66C9DC327ECB9CA00A93177 /* SignUpView.swift */,
+				E6522AFD27EED0FB008610F5 /* EmailVerificationView.swift */,
+				E6522AFF27EEE2B9008610F5 /* SetNewPasswordView.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -282,13 +291,16 @@
 				E620F67B27EB8204001233C7 /* LoginView.swift in Sources */,
 				E620F67127EB1695001233C7 /* Color+Extension.swift in Sources */,
 				E620F68627EB909C001233C7 /* AuthenticationButton.swift in Sources */,
+				E6522B0027EEE2B9008610F5 /* SetNewPasswordView.swift in Sources */,
 				E620F68127EB875E001233C7 /* View+RoundedCorner.swift in Sources */,
 				E66C9DC427ECB9CA00A93177 /* SignUpView.swift in Sources */,
 				E620F68427EB8EFB001233C7 /* AuthenticationTextFieldStyle.swift in Sources */,
 				E620F67927EB24FF001233C7 /* Font+Extension.swift in Sources */,
 				E620F65627EB093B001233C7 /* SwiftUI_Social_AppApp.swift in Sources */,
 				E620F66727EB0BF0001233C7 /* SplashView.swift in Sources */,
+				E6522AFC27EEC010008610F5 /* BackButton.swift in Sources */,
 				E620F66A27EB1417001233C7 /* Constants.swift in Sources */,
+				E6522AFE27EED0FB008610F5 /* EmailVerificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -42,7 +42,10 @@ struct AuthenticationTextField: View {
                     self.isFocused = field == newValue
                 }
                 .focused($isFocused)
-                .textFieldStyle(.authentication(state: state))
+                .textFieldStyle(.authentication(
+                    state: state,
+                    isFocusing: isFocused
+                ))
             
                 // Submit lable and action
                 .submitLabel(nextField != nil ? .next : .done)
@@ -95,6 +98,7 @@ struct AuthenticationTextField: View {
         case nickname(id: Int = 0)
         case emailAddress(id: Int = 0)
         case password(id: Int = 0)
+        case oneTimeCode(id: Int = 0)
         
         fileprivate var textContentType: UITextContentType {
             switch self {
@@ -104,6 +108,8 @@ struct AuthenticationTextField: View {
                 return .emailAddress
             case .password:
                 return .password
+            case .oneTimeCode:
+                return .oneTimeCode
             }
         }
 
@@ -111,7 +117,7 @@ struct AuthenticationTextField: View {
             switch self {
             case .emailAddress:
                 return .emailAddress
-            case .nickname, .password:
+            case .nickname, .password, .oneTimeCode:
                 return .default
             }
         }

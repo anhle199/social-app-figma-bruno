@@ -10,9 +10,11 @@ import SwiftUI
 struct AuthenticationTextFieldStyle: TextFieldStyle {
     
     let state: AuthenticationTextField.FieldState
+    let isFocusing: Bool
     
-    init(state: AuthenticationTextField.FieldState = .unfocused) {
+    init(state: AuthenticationTextField.FieldState = .unfocused, isFocusing: Bool) {
         self.state = state
+        self.isFocusing = isFocusing
     }
     
     func _body(configuration: TextField<Self._Label>) -> some View {
@@ -20,7 +22,7 @@ struct AuthenticationTextFieldStyle: TextFieldStyle {
             .font(.primaryStyle(.body2))
             .padding(.vertical, 16)
             .padding(.horizontal, 24)
-            .background(Color.fieldBackground)
+            .background(isFocusing ? Color.white : Color.fieldBackground)
             .clipShape(RoundedRectangle(cornerRadius: 30))
             .overlay(
                 RoundedRectangle(cornerRadius: 30)
@@ -46,9 +48,10 @@ struct AuthenticationTextFieldStyle: TextFieldStyle {
 extension TextFieldStyle where Self == AuthenticationTextFieldStyle {
     
     static func authentication(
-        state: AuthenticationTextField.FieldState = .unfocused
+        state: AuthenticationTextField.FieldState = .unfocused,
+        isFocusing: Bool
     ) -> AuthenticationTextFieldStyle {
-        return AuthenticationTextFieldStyle(state: state)
+        return AuthenticationTextFieldStyle(state: state, isFocusing: isFocusing)
     }
     
 }

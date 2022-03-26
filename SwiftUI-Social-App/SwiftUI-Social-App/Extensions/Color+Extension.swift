@@ -17,7 +17,16 @@ extension Color {
         startPoint: .trailing,
         endPoint: .leading
     )
-    static let primaryColor = Color(red: 136 / 255.0, green: 139 / 255.0, blue: 244 / 255.0)
+    static let authRectangleLinearGradientColor = LinearGradient(
+        colors: [
+            Color(red: 81 / 255.0, green: 81 / 255.0, blue: 198 / 255.0, opacity: 0.1),
+            Color(red: 81 / 255.0, green: 81 / 255.0, blue: 198 / 255.0, opacity: 0.5),
+        ],
+        startPoint: .topTrailing,
+        endPoint: .bottomLeading
+    )
+    
+    static let primaryColor = Color(red: 81 / 255.0, green: 81 / 255.0, blue: 198 / 255.0)
     static let errorColor = Color(red: 233 / 255.0, green: 80 / 255.0, blue: 80 / 255.0)
     
     static let fieldBackground = Color(red: 243 / 255.0, green: 245 / 255.0, blue: 247 / 255.0)
