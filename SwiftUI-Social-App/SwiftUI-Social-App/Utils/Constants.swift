@@ -12,9 +12,32 @@ struct Constants {
         static let splashTitle = "iclick"
         static let splash = "splash"
         static let darkBackground = "background.dark"
+        static let headerBackground = "background.header"
         
         static let authHeaderDefault = "auth.header"
         static let authHeaderWithWelcome = "auth.header.welcome"
+        
+        enum Category: String, CaseIterable {
+            private static let prefix = "category"
+            static let overlay = "\(Constants.Image.Category.prefix).overlay"
+            
+            case photographer
+            case videoCreator = "video-creator"
+            case illustrator, designer
+            
+            var imageName: String {
+                "\(Constants.Image.Category.prefix).\(rawValue)"
+            }
+            
+            var title: String {
+                switch self {
+                case .photographer, .illustrator, .designer:
+                    return rawValue.capitalized
+                case .videoCreator:
+                    return "Video Creator"
+                }
+            }
+        }
     }
     
     struct Icon {

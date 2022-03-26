@@ -22,6 +22,7 @@
 		E620F68127EB875E001233C7 /* View+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F68027EB875E001233C7 /* View+RoundedCorner.swift */; };
 		E620F68427EB8EFB001233C7 /* AuthenticationTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F68327EB8EFB001233C7 /* AuthenticationTextFieldStyle.swift */; };
 		E620F68627EB909C001233C7 /* AuthenticationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E620F68527EB909C001233C7 /* AuthenticationButton.swift */; };
+		E64934D127EF808A002977CA /* CategorySelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E64934D027EF808A002977CA /* CategorySelectionView.swift */; };
 		E6522AFC27EEC010008610F5 /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6522AFB27EEC010008610F5 /* BackButton.swift */; };
 		E6522AFE27EED0FB008610F5 /* EmailVerificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6522AFD27EED0FB008610F5 /* EmailVerificationView.swift */; };
 		E6522B0027EEE2B9008610F5 /* SetNewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6522AFF27EEE2B9008610F5 /* SetNewPasswordView.swift */; };
@@ -47,6 +48,7 @@
 		E620F68027EB875E001233C7 /* View+RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+RoundedCorner.swift"; sourceTree = "<group>"; };
 		E620F68327EB8EFB001233C7 /* AuthenticationTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationTextFieldStyle.swift; sourceTree = "<group>"; };
 		E620F68527EB909C001233C7 /* AuthenticationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationButton.swift; sourceTree = "<group>"; };
+		E64934D027EF808A002977CA /* CategorySelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySelectionView.swift; sourceTree = "<group>"; };
 		E6522AFB27EEC010008610F5 /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
 		E6522AFD27EED0FB008610F5 /* EmailVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailVerificationView.swift; sourceTree = "<group>"; };
 		E6522AFF27EEE2B9008610F5 /* SetNewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNewPasswordView.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			children = (
 				E66C9DC527ECB9D500A93177 /* Authentication */,
 				E620F66627EB0BF0001233C7 /* SplashView.swift */,
+				E64934D027EF808A002977CA /* CategorySelectionView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				E620F68127EB875E001233C7 /* View+RoundedCorner.swift in Sources */,
 				E66C9DC427ECB9CA00A93177 /* SignUpView.swift in Sources */,
 				E620F68427EB8EFB001233C7 /* AuthenticationTextFieldStyle.swift in Sources */,
+				E64934D127EF808A002977CA /* CategorySelectionView.swift in Sources */,
 				E620F67927EB24FF001233C7 /* Font+Extension.swift in Sources */,
 				E620F65627EB093B001233C7 /* SwiftUI_Social_AppApp.swift in Sources */,
 				E620F66727EB0BF0001233C7 /* SplashView.swift in Sources */,
